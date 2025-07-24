@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="images/xiaomi.svg" alt="" style="height: 40px; width: 40px;"></a>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">介绍</a></li>
+            <li><a href="#purchase">购买</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+        <div class="user-info">
+            <div class="user-details">
+                <span class="name">用户名</span>
+                <span class="id">ID: 123456</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- 首页部分 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>欢迎来到GPT编程</h1>
+            <p>专业、可靠的编程服务</p>
+            <a href="#about" class="btn">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 版本信息 -->
+    <div class="version-info">2.0版</div>
+
+    <!-- 最新更新 -->
+    <section class="updates">
+        <div class="container">
+            <h2>最新更新内容</h2>
+            <p>这里是最新更新的内容描述，包括新功能、改进和修复的问题。</p>
+        </div>
+    </section>
+
+    <!-- 介绍部分 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>关于我</h2>
+            <div class="about-content">
+                <img src="images/turmp.jpg" alt="自我介绍图片" class="profile-img">
+                <div class="bio">
+                    <h3>自我介绍</h3>
+                    <p>这里是您的个人介绍内容。您可以在这里详细描述您的背景、经历、技能和成就。</p>
+                    <p>这段文字将帮助访问者了解您的专业领域和个人特点。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 购买部分 -->
+    <section id="purchase" class="purchase">
+        <div class="container">
+            <h2>我的服务/产品</h2>
+            <div class="products">
+                <div class="product-card">
+                    <i class="fas fa-cube fa-3x"></i>
+                    <h3>产品/ROBLOX</h3>
+                    <p>ROBLOX教程非常牛逼。</p>
+                    <span class="price">¥99.99</span>
+                    <a href="#" class="btn">立即购买</a>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-cubes fa-3x"></i>
+                    <h3>产品/CHATGPT</h3>
+                    <p>ChatGPT。</p>
+                    <span class="price">¥10</span>
+                    <a href="#" class="btn">立即购买</a>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-cog fa-3x"></i>
+                    <h3>产品/科学上网</h3>
+                    <p>科学上网。</p>
+                    <span class="price">¥12.99</span>
+                    <a href="#" class="btn">立即购买</a>
+                </div>
+                <div class="product-card">
+                    <i class="fas fa-cubes fa-3x"></i>
+                    <h3>产品/coze</h3>
+                    <p>coze教程。</p>
+                    <span class="price">¥9.9</span>
+                    <a href="#" class="btn">立即购买</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>email@example.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>123-456-7890</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>城市，省份，国家</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="email" placeholder="您的邮箱" required>
+                    <textarea placeholder="您的留言" required></textarea>
+                    <button type="submit" class="btn">发送留言</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="mailto:example@126.com" class="email-link"><img src="images/126.svg" alt="126邮箱" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;">example@126.com</a>
+            </div>
+            <p>&copy; 2023 个人网站. 保留所有权利.</p>
+            <div class="language-selector">
+                <select>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // 语言选择功能
+        document.querySelector('.language-selector select').addEventListener('change', function() {
+            alert('语言已切换为: ' + this.value);
+        });
+    </script>
+</body>
+</html>
